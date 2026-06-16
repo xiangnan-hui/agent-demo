@@ -1,0 +1,6 @@
+2026-06-16 11:38:15,234 - agent - ERROR - vector_store.py:102 -[加载知识库]D:\python\llm\AI大模型RAG与智能体开发\p6Agent项目最终\data\扫地机器人100问.pdf加载失败：`pypdf` package not found, please install it with `pip install pypdf`, exc_info = True
+2026-06-16 11:38:17,448 - agent - INFO - vector_store.py:99 -[加载知识库]D:\python\llm\AI大模型RAG与智能体开发\p6Agent项目最终\data\扫地机器人100问2.txt内容加载成功
+2026-06-16 11:38:20,014 - agent - INFO - vector_store.py:99 -[加载知识库]D:\python\llm\AI大模型RAG与智能体开发\p6Agent项目最终\data\扫拖一体机器人100问.txt内容加载成功
+2026-06-16 11:38:24,824 - agent - INFO - vector_store.py:99 -[加载知识库]D:\python\llm\AI大模型RAG与智能体开发\p6Agent项目最终\data\故障排除.txt内容加载成功
+2026-06-16 11:38:27,453 - agent - INFO - vector_store.py:99 -[加载知识库]D:\python\llm\AI大模型RAG与智能体开发\p6Agent项目最终\data\维护保养.txt内容加载成功
+2026-06-16 11:38:29,807 - agent - INFO - vector_store.py:99 -[加载知识库]D:\python\llm\AI大模型RAG与智能体开发\p6Agent项目最终\data\选购指南.txt内容加载成功

@@ -1,0 +1,22 @@
+2026-06-16 22:21:24,492 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有1条消息
+2026-06-16 22:21:24,492 - agent - DEBUG - middleware.py:44 -[log_before_model]HumanMessage|扫地机器人再我所在的地区的气温下，如何保养
+2026-06-16 22:21:27,101 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:get_user_location
+2026-06-16 22:21:27,101 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{}
+2026-06-16 22:21:27,104 - agent - INFO - middleware.py:25 -[tool monitor]工具get_user_location调用成功
+2026-06-16 22:21:27,107 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有3条消息
+2026-06-16 22:21:27,108 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|深圳
+2026-06-16 22:21:29,256 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:get_weather
+2026-06-16 22:21:29,257 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'city': '深圳'}
+2026-06-16 22:21:29,262 - agent - INFO - middleware.py:25 -[tool monitor]工具get_weather调用成功
+2026-06-16 22:21:29,264 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有5条消息
+2026-06-16 22:21:29,264 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|城市深圳天气为晴天，气温26摄氏度，空气湿度50%， 南风1级，AQI21，最近6小时降雨概率低
+2026-06-16 22:21:31,895 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:rag_summarize
+2026-06-16 22:21:31,898 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'query': '扫地机器人在26摄氏度、50%湿度环境下的保养方法'}
+2026-06-16 22:21:33,563 - agent - INFO - middleware.py:25 -[tool monitor]工具rag_summarize调用成功
+2026-06-16 22:21:33,566 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有7条消息
+2026-06-16 22:21:33,566 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|参考资料中未提及扫地机器人在26摄氏度、50%湿度环境下的具体保养方法。
+2026-06-16 22:21:36,031 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:rag_summarize
+2026-06-16 22:21:36,031 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'query': '扫地机器人日常保养方法和注意事项'}
+2026-06-16 22:21:38,711 - agent - INFO - middleware.py:25 -[tool monitor]工具rag_summarize调用成功
+2026-06-16 22:21:38,715 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有9条消息
+2026-06-16 22:21:38,716 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|扫地机器人日常保养需定期清理尘盒、滤网和滚刷，避免毛发缠绕；使用后及时倒空尘盒并清洗滤网（部分型号支持水洗）；检查边刷和传感器是否被异物遮挡；避免在潮湿或有液体的地面上运行；长时间不用时应关闭电源并存放于干燥处。

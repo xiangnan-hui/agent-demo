@@ -1,0 +1,27 @@
+2026-06-16 23:04:09,513 - agent - INFO - middleware.py:40 -[log_before_model]即将调用模型，带有1条消息。
+2026-06-16 23:04:09,514 - agent - DEBUG - middleware.py:42 -[log_before_model]HumanMessage | 给我生成我的使用报告
+2026-06-16 23:04:10,909 - agent - INFO - middleware.py:19 -[tool monitor]执行工具：get_user_id
+2026-06-16 23:04:10,910 - agent - INFO - middleware.py:20 -[tool monitor]传入参数：{'query': 'user_id'}
+2026-06-16 23:04:10,911 - agent - INFO - middleware.py:24 -[tool monitor]工具get_user_id调用成功
+2026-06-16 23:04:10,913 - agent - INFO - middleware.py:40 -[log_before_model]即将调用模型，带有3条消息。
+2026-06-16 23:04:10,913 - agent - DEBUG - middleware.py:42 -[log_before_model]ToolMessage | 1003
+2026-06-16 23:04:12,149 - agent - INFO - middleware.py:19 -[tool monitor]执行工具：get_current_month
+2026-06-16 23:04:12,150 - agent - INFO - middleware.py:20 -[tool monitor]传入参数：{'query': 'current_month'}
+2026-06-16 23:04:12,151 - agent - INFO - middleware.py:24 -[tool monitor]工具get_current_month调用成功
+2026-06-16 23:04:12,153 - agent - INFO - middleware.py:40 -[log_before_model]即将调用模型，带有5条消息。
+2026-06-16 23:04:12,153 - agent - DEBUG - middleware.py:42 -[log_before_model]ToolMessage | 2026-04
+2026-06-16 23:04:12,942 - agent - INFO - middleware.py:19 -[tool monitor]执行工具：fill_context_for_report
+2026-06-16 23:04:12,942 - agent - INFO - middleware.py:20 -[tool monitor]传入参数：{}
+2026-06-16 23:04:12,943 - agent - INFO - middleware.py:24 -[tool monitor]工具fill_context_for_report调用成功
+2026-06-16 23:04:12,944 - agent - INFO - middleware.py:40 -[log_before_model]即将调用模型，带有7条消息。
+2026-06-16 23:04:12,944 - agent - DEBUG - middleware.py:42 -[log_before_model]ToolMessage | fill_context_for_report已调用
+2026-06-16 23:04:14,803 - agent - INFO - middleware.py:19 -[tool monitor]执行工具：fetch_external_data
+2026-06-16 23:04:14,804 - agent - INFO - middleware.py:20 -[tool monitor]传入参数：{'user_id': '1003', 'month': '2026-04'}
+2026-06-16 23:04:14,806 - agent - INFO - middleware.py:24 -[tool monitor]工具fetch_external_data调用成功
+2026-06-16 23:04:14,808 - agent - INFO - middleware.py:40 -[log_before_model]即将调用模型，带有9条消息。
+2026-06-16 23:04:14,808 - agent - DEBUG - middleware.py:42 -[log_before_model]ToolMessage | {"特征": "90㎡ | 1狗 | 短毛地毯", "效率": "毛发清理:93%\\n地毯增压使用:17次/月", "耗材": "胶刷更换:剩余45天\\n尘盒容量:每2天清理", "对比": "毛发处理效率前10%"}
+2026-06-16 23:04:16,163 - agent - INFO - middleware.py:19 -[tool monitor]执行工具：rag_summarize
+2026-06-16 23:04:16,163 - agent - INFO - middleware.py:20 -[tool monitor]传入参数：{'query': '宠物家庭扫地机器人保养建议'}
+2026-06-16 23:04:20,625 - agent - INFO - middleware.py:24 -[tool monitor]工具rag_summarize调用成功
+2026-06-16 23:04:20,627 - agent - INFO - middleware.py:40 -[log_before_model]即将调用模型，带有11条消息。
+2026-06-16 23:04:20,627 - agent - DEBUG - middleware.py:42 -[log_before_model]ToolMessage | 宠物家庭使用扫地机器人需定期清理滚刷和滤网，防止宠物毛发缠绕；建议每周检查边刷和传感器是否被毛发堵塞，并及时清理尘盒；使用后应清空尘盒并清洗可水洗部件，保持机器内部干燥，以延长使用寿命。

@@ -1,0 +1,39 @@
+2026-06-16 22:42:28,860 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有1条消息
+2026-06-16 22:42:28,860 - agent - DEBUG - middleware.py:44 -[log_before_model]HumanMessage|给我生成我的使用报告
+2026-06-16 22:42:31,457 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:fill_context_for_report
+2026-06-16 22:42:31,457 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{}
+2026-06-16 22:42:31,459 - agent - INFO - middleware.py:25 -[tool monitor]工具fill_context_for_report调用成功
+2026-06-16 22:42:31,460 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有3条消息
+2026-06-16 22:42:31,460 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|fill_context_for_report已调用
+2026-06-16 22:42:33,110 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:get_user_id
+2026-06-16 22:42:33,111 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{}
+2026-06-16 22:42:33,116 - agent - INFO - middleware.py:25 -[tool monitor]工具get_user_id调用成功
+2026-06-16 22:42:33,117 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有5条消息
+2026-06-16 22:42:33,118 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|Error invoking tool 'get_user_id' with kwargs {} with error:
+ query: Field required
+ Please fix the error and try again.
+2026-06-16 22:42:35,017 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:get_user_id
+2026-06-16 22:42:35,017 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'query': 'get user id'}
+2026-06-16 22:42:35,018 - agent - INFO - middleware.py:25 -[tool monitor]工具get_user_id调用成功
+2026-06-16 22:42:35,019 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有7条消息
+2026-06-16 22:42:35,019 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|1004
+2026-06-16 22:42:36,716 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:get_current_month
+2026-06-16 22:42:36,717 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'query': 'get current month'}
+2026-06-16 22:42:36,717 - agent - INFO - middleware.py:25 -[tool monitor]工具get_current_month调用成功
+2026-06-16 22:42:36,718 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有9条消息
+2026-06-16 22:42:36,718 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|2026-01
+2026-06-16 22:42:38,860 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:fetch_external_data
+2026-06-16 22:42:38,861 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'user_id': '1004', 'month': '2026-01'}
+2026-06-16 22:42:38,864 - agent - INFO - middleware.py:25 -[tool monitor]工具fetch_external_data调用成功
+2026-06-16 22:42:38,868 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有11条消息
+2026-06-16 22:42:38,868 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|{"特征": "85㎡ | 2猫 | 混合地面", "效率": "猫砂泼洒处理:8次/月\\n自动回充成功率:89%", "耗材": "主刷缠绕:严重\\n滤网更换:急需", "对比": "建议升级吸力至2500Pa"}
+2026-06-16 22:42:40,825 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:rag_summarize
+2026-06-16 22:42:40,825 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'query': '扫地机器人滤网更换和主刷清理建议'}
+2026-06-16 22:42:43,672 - agent - INFO - middleware.py:25 -[tool monitor]工具rag_summarize调用成功
+2026-06-16 22:42:43,675 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有13条消息
+2026-06-16 22:42:43,675 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|滤网建议每2-3个月更换一次，若使用频繁或环境灰尘较多可适当缩短周期；主刷需定期清理缠绕的毛发和杂物，建议每周检查并清理一次，以保持清洁效果和设备正常运行。
+2026-06-16 22:42:45,372 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:rag_summarize
+2026-06-16 22:42:45,372 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'query': '多宠物家庭扫地机器人使用建议'}
+2026-06-16 22:42:47,999 - agent - INFO - middleware.py:25 -[tool monitor]工具rag_summarize调用成功
+2026-06-16 22:42:48,002 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有15条消息
+2026-06-16 22:42:48,002 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|多宠物家庭应选择吸力强、具备防缠绕设计和大尘盒容量的扫地机器人，优先考虑带有智能避障和自动集尘功能的型号，以有效清理宠物毛发并减少人工干预。

@@ -1,0 +1,22 @@
+2026-06-16 22:26:27,461 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有1条消息
+2026-06-16 22:26:27,461 - agent - DEBUG - middleware.py:44 -[log_before_model]HumanMessage|给我生成我的使用报告
+2026-06-16 22:26:29,495 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:get_user_id
+2026-06-16 22:26:29,495 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'query': 'user_id'}
+2026-06-16 22:26:29,496 - agent - INFO - middleware.py:25 -[tool monitor]工具get_user_id调用成功
+2026-06-16 22:26:29,498 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有3条消息
+2026-06-16 22:26:29,498 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|1001
+2026-06-16 22:26:33,031 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:get_current_month
+2026-06-16 22:26:33,031 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'query': 'current_month'}
+2026-06-16 22:26:33,033 - agent - INFO - middleware.py:25 -[tool monitor]工具get_current_month调用成功
+2026-06-16 22:26:33,037 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有5条消息
+2026-06-16 22:26:33,037 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|2026-10
+2026-06-16 22:26:34,583 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:fill_context_for_report
+2026-06-16 22:26:34,589 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{}
+2026-06-16 22:26:34,597 - agent - INFO - middleware.py:25 -[tool monitor]工具fill_context_for_report调用成功
+2026-06-16 22:26:34,599 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有7条消息
+2026-06-16 22:26:34,599 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|fill_context_for_report已调用
+2026-06-16 22:26:36,682 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:fetch_external_data
+2026-06-16 22:26:36,683 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'user_id': '1001', 'month': '2026-10'}
+2026-06-16 22:26:36,685 - agent - INFO - middleware.py:25 -[tool monitor]工具fetch_external_data调用成功
+2026-06-16 22:26:36,687 - agent - INFO - middleware.py:43 -[log_before_model]即将调用模型，带有9条消息
+2026-06-16 22:26:36,687 - agent - DEBUG - middleware.py:44 -[log_before_model]ToolMessage|{"特征": "65㎡公寓 | 单身 | 木地板", "效率": "覆盖率:86%\\n日均清扫:46㎡\\n漏扫区域:沙发底部（高度不足）", "耗材": "主刷寿命:剩余40天\\nHEPA滤网:剩余20%", "对比": "优于68%同面积用户（清洁频率持续回升）"}

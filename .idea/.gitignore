@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+
+# env
+venv/
+.env
+.env.*
+
+# anaconda
+*.conda
+*.ipynb_checkpoints
+
+# pycharm
+.idea/
+
+# logs
+logs/
+*.log
+
+# model cache
+models/
+
+# vector db
+chroma_db/
+
+# secrets
+config.yaml
+apikey.py
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
