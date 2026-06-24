@@ -12,9 +12,7 @@ from model.factory import chat_model
 
 
 def print_prompt(prompt):
-    print("="*20)
     print(prompt.to_string())
-    print("="*20)
     return prompt
 
 

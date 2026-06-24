@@ -53,22 +53,6 @@ def report_prompt_switch(request: ModelRequest):# 动态切换提示词
     is_report = request.runtime.context.get("report", False)
 
     if is_report:    # 是报告生成场景,返回报告生成提示词内容
-        print("*"*100)
         return load_report_prompts()
 
     return load_system_prompts()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

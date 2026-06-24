@@ -23,3 +23,36 @@ class EmbeddingsFactory(BaseModelFactory):
 
 chat_model = ChatModelFactory().generator()
 embed_model = EmbeddingsFactory().generator()
+
+
+""""
+为什么要写 BaseModelFactory？
+
+为了统一模型创建接口。
+
+项目后续可能接入：
+- DeepSeek
+- GPT
+- Qwen
+- Claude
+
+通过抽象工厂约束所有模型工厂实现同样的generator方法。
+
+业务代码依赖抽象而不是具体实现，
+符合开闭原则和依赖倒置原则。
+"""
+
+"""
+ABC和abstractmethod作用是什么？
+ABC用于定义抽象基类。
+
+@abstractmethod用于声明抽象方法。
+
+子类必须实现这些方法，否则无法实例化。
+
+作用类似Java中的
+abstract class + abstract method
+或者interface。
+
+
+"""

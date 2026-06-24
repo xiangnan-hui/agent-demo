@@ -1,7 +1,7 @@
 import os
 
 from typer.utils import MixedAnnotatedAndDefaultStyleError
-
+from service.weather_service import WeatherService
 from utils.logger_handler import logger
 from langchain_core.structured_query import Comparison
 from langchain_core.tools import  tool
@@ -22,9 +22,31 @@ external_data = {}
 def rag_summarize(query:str) -> str:
     return rag.rag_summarize(query)
 
-@tool(description="获取指定城市的天气，以消息字符串的形式返回")
-def get_weather(city:str) -> str:
-    return f"城市{city}天气为晴天，气温26摄氏度，空气湿度50%， 南风1级，AQI21，最近6小时降雨概率低"
+# @tool(description="获取指定城市的天气，以消息字符串的形式返回")
+# def get_weather(city:str) -> str:
+#     return f"城市{city}天气为晴天，气温26摄氏度，空气湿度50%， 南风1级，AQI21，最近6小时降雨概率低"
+@tool(description="获取指定城市天气（真实高德API）")
+def get_weather(city: str) -> str:
+
+    service = WeatherService()
+    result = service.get_weather(city)
+
+    # 高德返回结构处理
+    if result.get("status") == "1":
+        live = result["lives"][0]
+
+        return (
+            f"城市：{live['city']}\n"
+            f"天气：{live['weather']}\n"
+            f"温度：{live['temperature']}°C\n"
+            f"湿度：{live['humidity']}%\n"
+            f"风向：{live['winddirection']}\n"
+            f"风力：{live['windpower']}"
+        )
+
+    return "天气获取失败"
+
+
 
 @tool(description="获取用户所在城市的名称，以纯字符串形式放回")
 def get_user_location() -> str:

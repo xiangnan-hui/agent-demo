@@ -26,10 +26,6 @@ class ReactAgent:
         for chunk in  self.agent.stream(input_dict, stream_mode = "values", context = {"report": False}):
             latest_message =  chunk["messages"][-1]
             if latest_message.content:
-                yield latest_message.content.strip() + "\n"
+                yield latest_message.content.strip() + "\n"  #yield 先返回但函数不结束
 
 
-if __name__ == '__main__':
-    agent = ReactAgent()
-    for chunk in agent.execute_stream("给我生成我的使用报告"):
-        print(chunk, end="", flush=True)

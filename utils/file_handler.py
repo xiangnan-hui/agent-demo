@@ -36,7 +36,7 @@ def get_file_md5_hex(filepath:str): # 获取文件的Md5的十六进制字符串
 
 
 
-def listdir_with_allowed_type(path:str, allowed_types:tuple[str]):  # 但会文件夹内的文件列表（允许的文件后缀）
+def listdir_with_allowed_type(path:str, allowed_types:tuple[str]):  # 返回文件夹内的文件列表（允许的文件后缀）
     files = []
     if not os.path.isdir(path):
         logger.error(f"[listdir_with_allowed_type]{path}不是文件夹")

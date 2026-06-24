@@ -14,14 +14,14 @@ if "message" not in st.session_state:
     st.session_state["message"] = []
 
 
-for message in st.session_state["message"]:
+for message in st.session_state["message"]:  #历史读取消息
     st.chat_message(message["role"]).write(message["content"])
 # 用户输入提示词
 prompt = st.chat_input()
 
 if prompt:
-    st.chat_message("user").write(prompt)
-    st.session_state["message"].append({"role": "user", "content" : prompt})
+    st.chat_message("user").write(prompt) # 加载用户消息气泡
+    st.session_state["message"].append({"role": "user", "content" : prompt})  #保存到历史
 
     response_messages = []
     with st.spinner("智能客服思考中...."):

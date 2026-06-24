@@ -1,0 +1,24 @@
+2026-06-24 20:12:01,067 - agent - INFO - middleware.py:44 -[log_before_model]即将调用模型，带有1条消息
+2026-06-24 20:12:01,068 - agent - DEBUG - middleware.py:45 -[log_before_model]HumanMessage|北京天气怎么样
+2026-06-24 20:12:02,401 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:get_weather
+2026-06-24 20:12:02,401 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'city': '北京'}
+2026-06-24 20:12:02,645 - agent - INFO - middleware.py:26 -[tool monitor]工具get_weather调用成功
+2026-06-24 20:12:03,254 - agent - INFO - middleware.py:44 -[log_before_model]即将调用模型，带有3条消息
+2026-06-24 20:12:03,255 - agent - DEBUG - middleware.py:45 -[log_before_model]ToolMessage|城市：北京市
+天气：晴
+温度：26°C
+湿度：66%
+风向：东
+风力：≤3
+2026-06-24 20:12:23,957 - agent - INFO - middleware.py:44 -[log_before_model]即将调用模型，带有1条消息
+2026-06-24 20:12:23,958 - agent - DEBUG - middleware.py:45 -[log_before_model]HumanMessage|开封天气怎么样
+2026-06-24 20:12:25,286 - agent - INFO - middleware.py:20 -[tool monitor]执行工具:get_weather
+2026-06-24 20:12:25,286 - agent - INFO - middleware.py:21 -[tool monitor]传入参数:{'city': '开封'}
+2026-06-24 20:12:25,527 - agent - INFO - middleware.py:26 -[tool monitor]工具get_weather调用成功
+2026-06-24 20:12:26,155 - agent - INFO - middleware.py:44 -[log_before_model]即将调用模型，带有3条消息
+2026-06-24 20:12:26,156 - agent - DEBUG - middleware.py:45 -[log_before_model]ToolMessage|城市：开封市
+天气：阴
+温度：27°C
+湿度：55%
+风向：西南
+风力：≤3
